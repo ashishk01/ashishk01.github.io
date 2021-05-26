@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Internshala</title>
+  </head>
+
+  <body>
+    <!-- Nav Bar -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <img
+          src="img/logo.png "
+          class="img-fluid"
+          style="width: 150px; height: 50px"
+          alt=""
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Internship <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Fresher Jobs</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Online Training
+                <span class="offer">Offer</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg">Location</div>
+                    <div class="col-lg">Profile</div>
+                    <div class="col-lg">Category</div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <button
+                type="button"
+                class="btn"
+                id="loginBtn"
+                data-toggle="modal"
+                data-target="#login-modal"
+              >
+                Login
+              </button>
+            </li>
+            <li class="nav-item dropdown">
+              <button
+                type="button"
+                class="btn btn-primary dropdown-toggle ml-1"
+                data-toggle="dropdown"
+              >
+                Register
+              </button>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="container">
+                  <div class="row" id="register">
+                    <a href="#"><div class="col-sm">As a student</div></a>
+                    <a href="#"><div class="col-sm">As a employer</div></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- Nav-bar Ends -->
+    <div class="container">
+      <form class="my-5">
+        <div class="form-row justify-content-center">
+          <div class="form-group col-6">
+            <input
+              type="email"
+              class="form-control"
+              id="inputEmail4"
+              placeholder="What are you looking for?"
+              style="padding: 1.5rem 0 1.75rem 1rem; font-size: small;"
+            />
+          </div>
+          <div class="form-group col-2">
+            <button class="btn btn-primary" style="padding: 14px">
+              <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <!-- carousel begins -->
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block w-100"
+              src="img/covid_task_force-1255-663aa2.png"
+              alt="First slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="img/data_science_specialization-1920-69af3d.png"
+              alt="Second slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="img/Capture.JPG"
+              alt="Third slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="img/Capture1.JPG"
+              alt="Third slide"
+            />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <!-- mid wrapper starts  -->
+
+      <div class="mt-5">
+        <h2 class="section_description">Internships</h2>
+        <div class="section_description">
+          Apply to 10,000+ Internships for free
+          <a class="view_all_cta view-all" href="#">
+            View all internships
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+        <!-- Cards -->
+        <h6 class="mt-4 section_description">Popular Cities</h6>
+
+        <div class="scroll">
+          <div class="mt-5 my-card">
+            <img src="img/work_from_home.svg" class="image" alt="..." />
+            <div class="">
+              <p class="text-center">WFH</p>
+            </div>
+          </div>
+
+          <div class="mt-5 my-card">
+            <img src="img/delhi_ncr.svg" class="image" />
+            <div class="c">
+              <p class="text-center">Delhi NCR</p>
+            </div>
+          </div>
+
+          <div class="mt-5 my-card">
+            <img src="img/bangalore.svg" class="image" />
+            <div class="">
+              <p class="card-text text-center">Banglore</p>
+            </div>
+          </div>
+
+          <div class="mt-5 my-card">
+            <img src="img/mumbai.svg" class="image" />
+            <div class="">
+              <p class="text-center">Mumbai</p>
+            </div>
+          </div>
+
+          <div class="mt-5 my-card">
+            <img src="img/hyderabad.svg" class="image" />
+            <div class="">
+              <p class="text-center">Hyderabad</p>
+            </div>
+          </div>
+
+          <div class="mt-5 my-card">
+            <img src="img/chennai.svg" class="image" />
+            <div class="">
+              <p class="text-center">Chennai</p>
+            </div>
+          </div>
+
+          <div class="mt-5 my-card">
+            <img src="img/kolkata.svg" class="image" />
+            <div class="">
+              <p class="text-center">Kolkata</p>
+            </div>
+          </div>
+
+          <div class="mt-5 my-card">
+            <img src="img/international.svg" class="image" />
+            <div class="">
+              <p class="text-center">International</p>
+            </div>
+          </div>
+        </div>
+
+        <h6 class="section_description" style="margin-top: 100px">
+          Popular Categories
+        </h6>
+
+        <div class="scroll">
+          <div class="mt-5 my-card">
+            <img src="img/part_time.svg" class="image" alt="..." />
+            <div class="">
+              <p class="text-center">Part time</p>
+            </div>
+          </div>
+
+          <div class="mt-5 my-card">
+            <img src="img/engineering.svg" class="image" />
+            <div class="c">
+              <p class="text-center">Engineering</p>
+            </div>
+          </div>
+
+          <div class="mt-5 my-card">
+            <img src="img/ngo.svg" class="image" />
+            <div class="">
+              <p class="card-text text-center">NGO</p>
+            </div>
+          </div>
+
+          <div class="mt-5 my-card">
+            <img src="img/mba.svg" class="image" />
+            <div class="">
+              <p class="text-center">MBA</p>
+            </div>
+          </div>
+
+          <div class="mt-5 my-card">
+            <img src="img/design.svg" class="image" />
+            <div class="">
+              <p class="text-center">Design</p>
+            </div>
+          </div>
+
+          <div class="mt-5 my-card">
+            <img src="img/science.svg" class="image" />
+            <div class="">
+              <p class="text-center">Science</p>
+            </div>
+          </div>
+
+          <div class="mt-5 my-card">
+            <img src="img/media.svg" class="image" />
+            <div class="">
+              <p class="text-center">Media</p>
+            </div>
+          </div>
+
+          <div class="mt-5 my-card">
+            <img src="img/humanities.svg" class="image" />
+            <div class="">
+              <p class="text-center">Humanities</p>
+            </div>
+          </div>
+        </div>
+
+        <a class="view-some" href="#">
+          View all internships
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+      <!-- Training -->
+      <div class="mt-5">
+        <h2 class="section_description">Internshala Training</h2>
+        <div class="section_description">
+          Learn new-age skills on the go
+          <a class="view_all_cta view-all" href="#">
+            View all training
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="no-scroll">
+          <div class="mt-5 my-card">
+            <img
+              src="img/training/programming_with_python.svg"
+              class="image"
+              alt="..."
+            />
+            <div class="">
+              <p class="text-center">Programming with python</p>
+            </div>
+          </div>
+
+          <div class="mt-5 my-card">
+            <img src="img/training/digital_marketing.svg" class="image" />
+            <div class="c">
+              <p class="text-center">Digital Marketing</p>
+            </div>
+          </div>
+
+          <div class="mt-5 my-card">
+            <img src="img/training/web_development.svg" class="image" />
+            <div class="">
+              <p class="card-text text-center">Web Development</p>
+            </div>
+          </div>
+
+          <div class="mt-5 my-card">
+            <img src="img/training/machine_learning.svg" class="image" />
+            <div class="">
+              <p class="text-center">Machine learning</p>
+            </div>
+          </div>
+
+          <div class="mt-5 my-card">
+            <img src="img/training/advanced_excel.svg" class="image" />
+            <div class="">
+              <p class="text-center">Advance Excel</p>
+            </div>
+          </div>
+
+          <div class="mt-5 my-card">
+            <img src="img/training/ethical_hacking.svg" class="image" />
+            <div class="">
+              <p class="text-center">Ethical hacking</p>
+            </div>
+          </div>
+
+          <div class="mt-5 my-card">
+            <img src="img/training/autocad.svg" class="image" />
+            <div class="">
+              <p class="text-center">Auto CAD</p>
+            </div>
+          </div>
+
+          <div class="mt-5 my-card">
+            <img src="img/training/creative_writing.svg" class="image" />
+            <div class="">
+              <p class="text-center">Creative Writing</p>
+            </div>
+          </div>
+        </div>
+        <p class="text-center">& 52 more...</p>
+        <a class="mt-3 view-some" href="#">
+          View all Trainings
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+      <!-- Freshers job -->
+      <div class="mt-5">
+        <h2 class="section_description">
+          Freshers job <span class="new btn btn-info">NEW</span>
+        </h2>
+        <div class="section_description">
+          Learn new-age skills on the go
+          <a class="view_all_cta view-all" href="#">
+            View all Job
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="jobs">
+          <div class="mt-5 new-card">
+            <img src="img/training/ctc.svg" class="image" alt="..." />
+            <div class="">
+              <p class="text-center">Minimum CTC of 3LPA</p>
+            </div>
+          </div>
+
+          <div class="mt-5 new-card">
+            <img src="img/training/dream.svg" class="image" />
+            <div class="c">
+              <p class="text-center">Dream Companies</p>
+            </div>
+          </div>
+
+          <div class="mt-5 new-card">
+            <img src="img/training/verified.svg" class="image" />
+            <div class="">
+              <p class="card-text text-center">Verified 100% jobs</p>
+            </div>
+          </div>
+        </div>
+        <a class="mt-3 view-some" href="#">
+          View all Job
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="container-fluid  footer-column">
+      <div class="row border-bottom border-white" id="lg-screen">
+        <div class="col-sm-3 mt-3 ">
+          <ul>
+            <h6>Internship by places</h6>
+            <li><a href="#"> Internship in India</a></li>
+            <li><a href="#"> Internship in Delhi</a></li>
+            <li><a href="#"> Internship in Banglore</a></li>
+            <li><a href="#"> Internship in Hydrabad</a></li>
+            <li><a href="#"> Internship in Mumbai</a></li>
+            <li><a href="#"> Internship in Chennai/a></li>
+            <li><a href="#"> Internship in Gurgaon</a></li>
+            <li><a href="#"> Internship in Kolkata</a></li>
+            <li><a href="#"> Virtual Internship</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3 mt-3">
+          <ul>
+            <h6>Internship by Stream</h6>
+            <li><a href="#"> Computer Science Internship</a></li>
+            <li><a href="#"> Electronics Internship</a></li>
+            <li><a href="#"> Mechanical Internship</a></li>
+            <li><a href="#"> Civil Internship</a></li>
+            <li><a href="#"> Marketing Internship</a></li>
+            <li><a href="#"> Chemical Internship</a></li>
+            <li><a href="#"> Finance Internship</a></li>
+            <li><a href="#"> Summer Research Fellowship</a></li>
+            <li><a href="#"> Campus Ambassador Program</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3 mt-3">
+          <ul>
+            <a href="#"><h6>Online Trainig <span class="offer">OFFER</span></h6></a>
+            <li><a href="#"> Web Development</a></li>
+            <li><a href="#"> Android App Development</a></li>
+            <li><a href="#"> Prograaming with Python</a></li>
+            <li><a href="#"> Data Science</a></li>
+            <li><a href="#"> Ethical SCience</a></li>
+            <li><a href="#"> Core Java</a></li>
+            <li><a href="#"> Digital Marketing</a></li>
+            <li><a href="#"> Advance Excel</a></li>
+            <li><a href="#"> Programming with C & C++</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3 mt-3">
+          <ul>
+            <h6>About Internshala</h6>
+            <li><a href="#"> About Us</a></li>
+            <li><a href="#"> We are hiring</a></li>
+            <li><a href="#"> Hire interns for your company</a></li>
+            <li><a href="#"> Team Diary</a></li>
+            <li><a href="#"> Blog</a></li>
+            <li><a href="#"> Our Services</a></li>
+            <li><a href="#"> Terms & Conditions</a></li>
+            <li><a href="#"> Privacy</a></li>
+            <li><a href="#"> Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+        <div class="col-sm-12 border-bottom border-white pt-5" id="hidden">
+          
+          <ul>
+            <li><a href="#"> About Us</a></li>
+            <li><a href="#"> We are hiring</a></li>
+            <li><a href="#"> Hire interns for your company</a></li>
+            <li><a href="#"> Team Diary</a></li>
+            <li><a href="#"> Blog</a></li>
+            <li><a href="#"> Our Services</a></li>
+            <li><a href="#"> Terms & Conditions</a></li>
+            <li><a href="#"> Privacy</a></li>
+            <li><a href="#"> Contact us</a></li>
+          </ul>
+          
+        </div>
+       <div>
+        <div class="footer-list-item border border-white" id="android_app_container">
+          <i class="fa fa-play" aria-hidden="true"></i> <span>Get Android App</span>
+      </div>
+      <div class="social mt-1"> Designed by Ashish</div>
+       </div>
+    </div>
+    <!-- Scripts only -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
